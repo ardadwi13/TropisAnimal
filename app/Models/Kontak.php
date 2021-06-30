@@ -1,0 +1,34 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\DB;
+
+class Kontak extends Model
+{
+    public function allData()
+    {
+        return DB::table('tb_kontak')->get();
+    }
+
+    public function detailData($id)
+    {
+        return DB::table('tb_kontak')->where('id',$id)->first();
+    }
+
+    public function addData($data)
+    {
+        DB::table('tb_kontak')->insert($data);
+    }
+
+    public function editData($id,$data)
+    {
+        DB::table('tb_kontak')->where('id',$id)->update($data);
+    }
+    public function deleteData($id)
+    {
+        DB::table('tb_kontak')->where('id',$id)->delete();  
+    }
+}

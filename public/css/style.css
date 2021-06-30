@@ -1,0 +1,287 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+}
+.jumbotron{
+    background-size:cover;
+    height: 625px;
+    text-align: left;
+    margin-top: -45px;
+}
+.jumbotron .display-4{
+    color:white;
+    margin-top: 65px;
+    font-size: 65px;
+    z-index: 1;
+}
+
+.jumbotron p {
+    color: white;
+}
+
+.middle .display-5{
+    font-size: 45px;
+}
+
+.flex-container-column{
+    display: flex;
+}
+
+.flex-container-row{
+    display: flex;
+}
+.card-paw{
+    width:290px;
+    height:300px;
+    float: center;
+    background-color: white;
+    margin: 15px;
+    border-radius:10px ;
+}
+.back-card{
+    background-size: contain;
+    height: 545px;
+    text-align: left;
+    
+}
+
+.back-card .display-6{
+    text-align: left;
+    font-size:35px;
+    margin-left: 85px;
+    margin-bottom: 75px;
+    margin-top: 55px;
+}
+
+.card{
+    width: 23rem;
+    height: 25rem;
+    margin:5px;
+}
+.card-galery{
+    width:16rem;
+    height:12rem;
+    margin: 5px;
+    
+}
+.card-galery:hover{
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.carousel{
+    width: 100%;
+    height: 55%;
+}
+
+.carousel .slide-box{
+    display: flex;
+    justify-content: space-between;
+}
+
+*,*::before,*:after{
+    box-sizing: border-box;
+}
+.footer{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 50px;
+    color:#fff;
+    background-color:#1b1b1c;
+}
+
+.footer > *{
+    flex:1 100%;
+}
+.footer-left{
+    margin-right: 1.25em;
+    margin-bottom: 2em;
+}
+.footer-left img{
+    width:35px;
+}
+.h2{
+    font-weight: 600;
+    font-size: 17px;
+}
+.footer ul{
+    list-style: none;
+    padding-left: 0;
+}
+.footer li{
+    line-height: 2em;
+}
+.footer a{
+    text-decoration: none;
+}  
+.footer-right{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-flow: row wrap;
+    
+}
+.footer-right > *{
+    flex:1 50%;
+    margin-right: 1.25em;
+   
+}
+.box a{
+    color: #fff;
+    font-weight: 450;
+    font-family: sans-serif;
+}
+.footer-bottom{
+    text-align:center;
+    color: #999;
+    padding-top: 50px;
+}
+.footer-left p{
+    padding-right: 20%;
+    color:#999;
+    font-weight: 450;
+}
+.socials a{
+    background:#364a62;
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    margin-right: 10px;
+    border-radius: 35px;
+}
+.socials a i{
+    color: #fff;
+    padding: 10px 12px;
+    font-size: 20px;
+}
+
+.img-map{
+    width:100%; 
+    height:auto;
+}
+
+.form-control{
+    background-color:#ecf0f1 ;
+}
+
+.btncontact{
+    color:white;
+    background-color: green;
+}
+
+.login-form{
+    width: 360px;
+    background: #f1f1f1;
+    height: 480px;
+    padding: 80px 40px;
+    border-radius: 10px;
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+}
+
+.login-form h1{
+    text-align: center;
+    margin-bottom: 60px;
+    font-size: 36px;
+}
+
+.text-input{
+    border-bottom: 2px solid #adadad;
+    position: relative;
+    margin: 30px 0;
+}
+
+.text-input input{
+    font-size: 15px;
+    color: #333;
+    border: none;
+    width: 100%;
+    outline: none;
+    background: none;
+    padding: 0 5px;
+    height: 40px;
+}
+
+.text-input span::before{
+    
+    position: absolute;
+    top:50%;
+    left: 5px;
+    color: #adadad;
+    transform: translateY(-50%);
+    z-index: -1;
+    transition: .5s;
+}
+
+.text-input span::after{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    transition:.5s;
+}
+
+.focus + span::before{
+ top:5px;
+}
+
+.focus + span::after{
+    width: 100%;
+}
+
+.logbtn{
+    display: block;
+    width: 100%;
+    height: 50px;
+    border: none;
+    background:#05c46b;
+    color: honeydew;
+    background-size: 200%;
+    outline: none;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.logbtn:hover{
+    background:#0be881;
+}
+@media screen and (min-width: 600px){
+   
+    .footer-right > *{
+        flex: 1;
+    }
+    
+    .footer-left{
+        flex: 1 0px ;
+    }
+
+    
+    .footer-right{
+        flex: 2 0px ;
+    }
+}
+
+@media (max-width:600px){
+    .footer{
+        padding: 15px;
+    }
+}
